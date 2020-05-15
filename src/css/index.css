@@ -1,0 +1,25 @@
+#capture {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 400px;
+  height: 225px;
+  /* background-image: url("../assets/img/teacher_may.png");
+  background-position: left 30px;
+  background-repeat: no-repeat;
+  background-size: contain; */
+  background-color: #f5da55;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.classTitle {
+  padding-left: 60%;
+}
+.teacherIMG {
+  position: absolute;
+  left: -89px;
+  bottom: -253px;
+  max-width: 100%;
+  width: 100%;
+}
