@@ -4,25 +4,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/index.css">
   <title>Youtube Thumbnail</title>
 </head>
 
 <body>
-  <section class="config">
+  <section class="controls">
     <div class="topicGroup">
       <label for="classTopic">Class Topic</label>
       <input id="classTopic" type="text">
     </div>
+    <div class="download">
+      <input class="btn" type="button" value="Download" id="downloadButton">
+    </div>
   </section>
-  <div id="capture">
-    <h4 class="classTitle" style="color: #000; ">Hello world!</h4>
-    <img class="teacherIMG" src="./assets/img/teacher_may.png" alt="teache">
-  </div>
-  <div class="download">
-    <input type="button" value="Descargar" id="downloadButton">
-  </div>
-
+  <section class="capture">
+    <div class="capture__wrapper">
+      <div class="image__wrapper">
+        <img class="teacherIMG" src="./assets/img/miss-laura.png" alt="teache">
+      </div>
+      <div class="title__wrapper">
+        <img alt="Ms. Laura Title" class="channelTitle" src="./assets/img/title.png">
+      </div>
+      <div class="class__wrapper">
+        <p class="classTitle">Class Title</p>
+      </div>
+    </div>
+  </section>
   <script src="./js/index.js"></script>
 </body>
 

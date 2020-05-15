@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "parcel ./src/index.html",
+    "build": "parcel build ./scr/index.html"
   },
   "keywords": [],
   "author": "",
@@ -12,5 +13,8 @@
   "dependencies": {
     "file-saver": "^2.0.2",
     "html2canvas": "^1.0.0-rc.5"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
   }
 }

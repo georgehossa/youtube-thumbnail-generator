@@ -1,7 +1,7 @@
 import html2canvas from 'html2canvas';
 import { saveAs } from 'file-saver';
 
-const imageContainer = document.querySelector('#capture');
+const imageContainer = document.querySelector('.capture');
 const downloadButton = document.querySelector('#downloadButton');
 const topicInput = document.querySelector('#classTopic');
 const topicContainer = document.querySelector('.classTitle');

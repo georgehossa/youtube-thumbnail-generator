@@ -1,25 +1,69 @@
-#capture {
-  position: relative;
+body {
   display: flex;
-  align-items: center;
-  width: 400px;
-  height: 225px;
-  /* background-image: url("../assets/img/teacher_may.png");
-  background-position: left 30px;
-  background-repeat: no-repeat;
-  background-size: contain; */
+  font-family: "Balsamiq Sans", cursive;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  border: 0;
+}
+
+.controls {
+  padding: 1rem;
+  background-color: rgb(248, 225, 175);
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  margin: 1rem auto;
+  padding: 0.5rem 1rem;
+  border-radius: 0.2rem;
+  border: none;
+  font-family: "Balsamiq Sans", cursive;
+  font-size: 1rem;
+  background-color: brown;
+  color: white;
+}
+
+.capture {
+  position: relative;
+  width: 800px;
+  height: 450px;
   background-color: #f5da55;
   box-sizing: border-box;
   overflow: hidden;
 }
 
-.classTitle {
-  padding-left: 60%;
+.capture__wrapper {
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr;
+  grid-template-areas: "image title" "image class";
+  height: 100%;
 }
+
+.image__wrapper {
+  grid-area: image;
+  align-self: end;
+  justify-self: start;
+}
+
+.title__wrapper {
+  grid-area: title;
+  align-self: end;
+  justify-self: start;
+}
+
+.class__wrapper {
+  grid-area: class;
+}
+
+.channelTitle,
 .teacherIMG {
-  position: absolute;
-  left: -89px;
-  bottom: -253px;
-  max-width: 100%;
   width: 100%;
+}
+
+.channelTitle {
+  max-width: 80%;
 }
